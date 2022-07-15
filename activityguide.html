@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>=)!!</title>
+</head>
+<body>
+
+    <p>
+     Hola, mi nombre es <span class="nombre">_____</span>, muchísimo gusto :DDD!! 
+    </p>
+    <p>
+        El Arrendador declara es propietario del inmueble ubicado en <span class="dato">______</span>, departamento <span class="department">________</span>, de la Comuna<span class="comunaname">______
+        </span>.
+    </p>
+    <button onclick="
+    body = document.querySelector('body')
+    body.style.backgroundColor='black'
+    ">A negro</button>
+
+    <img id="imagen-a-trabajar" src="https://placedog.net/500" alt="DOG IMAGE COOOOL =DDD!">
+    <button onclick="
+        element = document.querySelector('#imagen-a-trabajar')
+        element.style.borderRadius='30%'
+        ">Agregar Bordes </button>
+    <button onclick="
+    element = document.querySelector('#imagen-a-trabajar')
+    element.style.borderRadius='0'
+    "> Quitar Bordes </button>
+    <ul>
+        <li id="ele1" onclick="
+        ele = document.querySelector('#ele1')
+        ele.style.textDecoration = 'line-through';
+        "> Elemento 1</li>
+        <li id="ele2" onclick="
+        ele = document.querySelector('#ele2')
+        ele.style.textDecoration = 'line-through';
+        "> Elemento 2</li>
+        <li> Elemento 3</li>
+        <li> Elemento 4</li>
+    </ul>
+    <select id="selector" onchange="
+        element = document.querySelector('#selector')
+        body = document.querySelector('body')
+        body.style.backgroundColor = element.value
+        ">
+        <option value="black">Negro</option>
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+    </select>
+
+    <p> ¿Qué lenguaje de programación estamos aprendiendo? </p>
+    <select id="selector" onchange="
+        elemento_seleccionado = document.querySelector('#selector')
+        elemento_resultado = document.querySelector('#resultado')
+        elemento_resultado.innerHTML = 'La alternativa es ' +
+        elemento_seleccionado.value
+        ">
+        <option value="incorrecta">Java</option>
+        <option value="correcta">Javascript</option>
+        <option value="incorrecta">Python</option>
+        <option value="incorrecta">Ruby</option>
+    </select>
+    <span id="resultado"> </span>
+    <script>
+        info1 = prompt("DIga la dirección, porfa =)!!")
+        var nombreSpan = document.querySelector("p .nombre")
+        var eleSpan = document.querySelector("p .dato")
+        nombreSpan.innerHTML = "John"
+        var ele2 = document.querySelector("p .department")
+        eleSpan.innerHTML= "Manuel"
+    </script>
+
+</body>
+</html>

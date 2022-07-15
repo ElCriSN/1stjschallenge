@@ -8,16 +8,17 @@
 </head>
 <body>
     <p>
-        El Arrendador declara es propietario del inmueble ubicado en <span id="propertydirection"></span>, departamento<span id="departamentnumber"></span>, de la Comuna<span id="comunaname"></span>.
+        El Arrendador declara es propietario del inmueble ubicado en <span class="property">______</span>, departamento <span class="department">________</span>, de la Comuna<span class="comunaname">______
+        </span>.
     </p>
 
     <script>
-        info1 = prompt("Ingrese la Dirección del Propietario")
-        info2 = prompt("Ingrese el Número del Departamento")
-        ele1 = document.querySelector("#propertydirection")
-        ele2 = document.querySelector("departmentnumber")
-        ele1.innerHMTL(info1) = "Manuel Claro 1234 =)!!"
-    </script>
+        var info1 = prompt("Ingrese la Dirección del inmueble porfa jajajaja =)!!!");
+        var info2 = prompt("Ingre el número de Departamento porfaa jajajjaa :) !!! =P!!");
+        var ele1 = document.querySelector("p .property");
+        var ele2 = document.querySelector("p .department");
+        ele1.innerHTML = info1;
+   </script> 
 
 </body>
 </html>
